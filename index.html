@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Penguin-Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class=".font-roboto">
+    <!-- header -->
+    <header class="bg-[#FFFBF0]">
+      <div class="max-w-[1140px] mx-auto px-4">
+        <!-- nav -->
+        <nav class="flex justify-between items-center py-5">
+          <div class="logo">
+            <img class="w-3/4 md:w-60 lg:w-96" src="./icons/logo.png" alt="" />
+          </div>
+          <div class="navs hidden md:block">
+            <ul class="flex justify-between items-center text-xl font-bold">
+              <li class="me-5"><a href="/">Home</a></li>
+              <li class="me-5"><a href="#">Product</a></li>
+              <li class="me-5"><a href="#">About us</a></li>
+              <li class="me-5"><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars md:hidden"></i>
+        </nav>
+        <!-- banner -->
+        <div class="banner flex flex-col md:flex-row justify-between items-center py-5">
+          <div class="banner-text space-y-2">
+            <h1 class="text-5xl md:text-7xl font-bebas">
+              <span class="text-[#FABE4C]">Be the Penguins </span> <br />
+              of Winter
+            </h1>
+            <p class="w-full md:w-3/4 pb-3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="flex justify-between items-center py-4 px-6 bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46]  border-none rounded-lg"
+            >
+              <img class="w-6 me-2" src="./icons/shopping-cart 1.png" alt="" />
+              <span class="text-white font-bold">BUY NOW</span>
+            </button>
+          </div>
+          <div class="banner-fig">
+            <img class="w-4/5" src="./images/model.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
